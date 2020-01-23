@@ -1,0 +1,32 @@
+﻿Bakery Project descritpion:
+---------------------------
+
+Story line:
+-----------
+I’m about to run a bakery with the Internet app to manage bakery goods, so my customers can view what is currently on the shelves.
+
+List of possible user stories:
+------------------------------
+US 1. As a bakery owner, I can add a bakery good to let the customers see what is currenlty fresh in sell. Conditions of satisfaction: Can I store product’s name and price? 
+US 2. As a bakery customer, I can view all the fresh bakery goods in sell to step in. Conditions of satisfaction: Can I see product’s price?
+US 3. As a bakery customer, I can check what is the most fresh bakery good right now in sell.
+
+Testing exercise:
+-----------------
+The quality of the tests is something we value at Vonage. Please, propose test suite for the app. An automated test suite would make us smile.
+
+How to run the app?:
+--------------------
+Please, follow Ubuntu or macOS README.rst to run the app.
+It serves RESTful service with the following API:
+GET /products
+GET /products/{product-id}
+GET /products/newest_id
+POST /products
+
+Example use:
+------------
+GET http://127.0.0.1:5000/products
+output [{“id":"1","name":"Bread","price":"3.45"}]
+POST http://127.0.0.1:5000/products with body {"name":"Bun","price":"1.2","id":""}
+output {"id": "2"}
