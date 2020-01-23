@@ -8,4 +8,5 @@ Unit tests for shop app, BDD approach, REST API.
 Technologies
 -----------
 -SpecFlow for BDD
+
 -RestSharp for REST API
